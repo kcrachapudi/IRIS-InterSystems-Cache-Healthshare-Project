@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug IRIS ObjectScript",
+            "type": "objectscript",
+            "request": "launch",
+            "host": "localhost",
+            "port": 52773,
+            "username": "SuperUser",
+            "password": "SYS",
+            "ns": "USER",
+            "docker.enabled": true,
+            "docker.container": "iris-simple",
+            "superServer.port": 1972
+        }
+    ]
+}

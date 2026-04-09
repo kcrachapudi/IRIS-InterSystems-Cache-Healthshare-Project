@@ -1,0 +1,18 @@
+{
+    "workbench.colorTheme": "InterSystems Default Dark Modern",
+    "intersystems.servers": {
+        "local_iris_simple": {
+            "webServer": {
+                "scheme": "http",
+                "host": "localhost",
+                "port": 52773
+            },
+            "username": "SuperUser"
+        }
+    },
+    "objectscript.conn": {
+        "server": "local_iris_simple",
+        "ns": "USER",
+        "active": true
+    }
+}
