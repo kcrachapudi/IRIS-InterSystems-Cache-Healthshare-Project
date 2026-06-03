@@ -16,4 +16,13 @@ Class IRISHealth.Patient
     {
         QUIT ^Patient(id, "Insurance")
     }
+    ClassMethod ListPatients()
+    {
+        SET id = ""
+        FOR  {
+            SET id = $ORDER(^Patient(id))
+            QUIT:id=""
+            WRITE "Patient ID: ", id, ", Name: ", ^Patient(id,"Name"), ", Insurance: ", ^Patient(id,"Insurance"), !
+        }
+    }
 }

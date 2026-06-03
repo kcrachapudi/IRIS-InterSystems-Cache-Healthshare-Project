@@ -2,17 +2,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug IRIS ObjectScript",
+            "name": "Debug IRISHealth.Run.Main",
             "type": "objectscript",
             "request": "launch",
             "host": "localhost",
-            "port": 52773,
+            "port": 1972,
             "username": "SuperUser",
             "password": "SYS",
             "ns": "USER",
             "docker.enabled": true,
             "docker.container": "iris-simple",
-            "superServer.port": 1972
+            "class": "IRISHealth.Run",
+            "method": "Main"
         }
     ]
 }
